@@ -1,0 +1,10 @@
+<?php /** @var $this \Bleidd\View\ViewRenderer */ ?>
+<?php /** @var $form \Bleidd\Form\FormBuilder */ ?>
+
+<form <?= $form->stringifyAttributes() ?>>
+    <?= $elements ?>
+
+    <div class='form-buttons-group'>
+        <?= $buttons ?>
+    </div>
+</form>

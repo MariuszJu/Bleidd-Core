@@ -1,0 +1,6 @@
+<?php /** @var $this \Bleidd\View\ViewRenderer */ ?>
+<?php /** @var $element \Bleidd\Form\Element\Button */ ?>
+
+<button type='<?= $element->getType() ?>' name='<?= $element->getName() ?>' <?= $element->stringifyAttributes() ?>>
+    <?= $element->getLabel() ?>
+</button>

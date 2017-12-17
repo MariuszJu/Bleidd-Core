@@ -1,0 +1,134 @@
+@mixin linear-gradient($from, $to) {
+    background: linear-gradient(to bottom, $from 0%, $to 100%);
+    background: -ms-linear-gradient(top, $from 0%, $to 100%);
+    background: -o-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-linear-gradient(top, $from 0%, $to 100%);
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+}
+
+@mixin linear-three-steps-gradient($top, $middle, $bottom) {
+    background: linear-gradient(to bottom, $top 0%, $middle 50%, $bottom 100%);
+    background: -ms-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+    background: -o-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+    background: -webkit-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+    background: -moz-linear-gradient(top, $top 0%, $middle 50%, $bottom 100%);
+}
+
+@mixin linear-four-steps-gradient($top, $middle1, $middle2, $bottom) {
+    background: linear-gradient(to bottom, $top 0%, $middle1 35%, $middle2 65%, $bottom 100%);
+    background: -ms-linear-gradient(top, $top 0%, $middle1 35%, $middle2 65%, $bottom 100%);
+    background: -o-linear-gradient(top, $top 0%, $middle1 35%, $middle2 65%, $bottom 100%);
+    background: -webkit-linear-gradient(top, $top 0%, $middle1 35%, $middle2 65%, $bottom 100%);
+    background: -moz-linear-gradient(top, $top 0%, $middle1 35%, $middle2 65%, $bottom 100%);
+}
+
+@mixin diagonal-135-gradient($left, $middle, $right) {
+    background: linear-gradient(135deg, $left 0%, $middle 50%, $right 100%);
+    background: -ms-linear-gradient(-45deg, $left 0%, $middle 50%, $right 100%);
+    background: -o-linear-gradient(-45deg, $left 0%, $middle 50%, $right 100%);
+    background: -webkit-linear-gradient(-45deg, $left 0%, $middle 50%, $right 100%);
+    background: -moz-linear-gradient(-45deg, $left 0%, $middle 50%, $right 100%);
+}
+
+@mixin diagonal-135-gradient2($left, $middle1, $middl2, $right) {
+    background: linear-gradient(135deg, $left 0%, $middle1 50%, $middl2 50%, $right 100%);
+    background: -ms-linear-gradient(-45deg, $left 0%, $middle1 50%, $middl2 50%, $right 100%);
+    background: -o-linear-gradient(-45deg, $left 0%, $middle1 50%, $middl2 50%, $right 100%);
+    background: -webkit-linear-gradient(-45deg, $left 0%, $middle1 50%, $middl2 50%, $right 100%);
+    background: -moz-linear-gradient(-45deg, $left 0%, $middle1 50%, $middl2 50%, $right 100%);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+        -ms-box-shadow: $shadow;
+         -o-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
+
+@mixin box-shadow-inset($shadow) {
+    -webkit-box-shadow: $shadow inset;
+       -moz-box-shadow: $shadow inset;
+        -ms-box-shadow: $shadow inset;
+         -o-box-shadow: $shadow inset;
+            box-shadow: $shadow inset;
+}
+
+@mixin animate($type...) {
+    -webkit-transition: $type ease-in-out;
+       -moz-transition: $type ease-in-out;
+        -ms-transition: $type ease-in-out;
+         -o-transition: $type ease-in-out;
+            transition: $type ease-in-out;
+}
+
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+       -moz-transform: rotate($deg);
+        -ms-transform: rotate($deg);
+         -o-transform: rotate($deg);
+            transform: rotate($deg);
+}
+
+@mixin customAnimate($sec, $type) {
+    -webkit-transition: $sec $type;
+       -moz-transition: $sec $type;
+        -ms-transition: $sec $type;
+         -o-transition: $sec $type;
+            transition: $sec $type;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+        -ms-transform: $transform;
+         -o-transform: $transform;
+            transform: $transform;
+}
+
+@mixin translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+       -moz-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+            transform: translate($x, $y);
+}
+
+@mixin animation($animation...) {
+   -webkit-animation: $animation;
+      -moz-animation: $animation;
+       -ms-animation: $animation;
+        -o-animation: $animation;
+}
+
+@mixin timing($timing) {
+    -webkit-transition-timing-function: $timing;
+       -moz-transition-timing-function: $timing;
+            transition-timing-function: $timing;
+}
+
+@mixin scale($scale) {
+    -webkit-transform: scale($scale);
+       -moz-transform: scale($scale);
+        -ms-transform: scale($scale);
+            transform: scale($scale);
+}
+
+@mixin delay($delay) {
+    -webkit-transition-delay: $delay;
+       -moz-transition-delay: $delay;
+            transition-delay: $delay;
+}
+
+@mixin transform-origin($origin...) {
+    -webkit-transition-origin: $origin;
+       -moz-transition-origin: $origin;
+             transform-origin: $origin;
+}

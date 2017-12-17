@@ -1,0 +1,40 @@
+<?php /** @var $this \Bleidd\View\ViewRenderer */ ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authentication</title>
+
+    <?php $this->assets()
+        ->prepend('admin/js/jquery.min.js')
+        ->append('admin/js/ajax.js')
+        ->append('admin/js/form.js')
+        ->prepend('admin/css/font-awesome.min.css')
+        ->prepend('admin/css/base.css')
+        ->prepend('admin/css/login.css')
+        ->minifyStylesheets('admin/css/styles.css')
+        ->minifyScripts('admin/js/scripts.js')
+    ?>
+</head>
+
+<body id='login-page'>
+    <div class='background'
+         style='background-image: url(/public/assets/admin/img/login_backgrounds/<?= $bg ?>)'
+    ></div>
+
+    <div class='mask'>
+        <div class='blur'
+             style='background-image: url(/public/assets/admin/img/login_backgrounds/<?= $bg ?>)'
+        ></div>
+    </div>
+
+    <div class='content'>
+        <?= $content ?>
+    </div>
+
+    <?= $this->assets()->renderScripts() ?>
+    <?= $this->assets()->renderStyleSheets() ?>
+    <?= $this->assets()->renderPlaceholders() ?>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+$color: #2989D8;
+
+$successColor: #53C100;
+$infoColor: #53A1EF;
+$errorColor: #CE2F2F;
+$warningColor: #E57C4B;
+
+@import 'mixins';
+
+@font-face {
+    font-weight: 600;
+    font-family: Lato;
+    font-style: normal;
+    src: url('../font/Lato-Bold.eot'),
+         url('../font/Lato-Bold.woff') format('woff'),
+         url('../font/Lato-Bold.woff2') format('woff2'),
+         url('../font/Lato-Bold.ttf') format('truetype'),
+         url('../font/Lato-Bold.eot#iefix') format('embedded-opentype');
+}
+@font-face {
+    font-weight: 400;
+    font-family: Lato;
+    font-style: normal;
+    src: url('../font/Lato-Regular.eot'),
+         url('../font/Lato-Regular.woff') format('woff'),
+         url('../font/Lato-Regular.woff2') format('woff2'),
+         url('../font/Lato-Regular.ttf') format('truetype'),
+         url('../font/Lato-Regular.eot#iefix') format('embedded-opentype');
+}
+@font-face {
+    font-weight: 300;
+    font-family: Lato;
+    font-style: normal;
+    src: url('../font/Lato-Light.eot'),
+         url('../font/Lato-Light.woff') format('woff'),
+         url('../font/Lato-Light.woff2') format('woff2'),
+         url('../font/Lato-Light.ttf') format('truetype'),
+         url('../font/Lato-Light.eot#iefix') format('embedded-opentype');
+}
+@font-face {
+    font-weight: 100;
+    font-family: Lato;
+    font-style: normal;
+    src: url('../font/Lato-Thin.eot'),
+    url('../font/Lato-Thin.woff') format('woff'),
+    url('../font/Lato-Thin.woff2') format('woff2'),
+    url('../font/Lato-Thin.ttf') format('truetype'),
+    url('../font/Lato-Thin.eot#iefix') format('embedded-opentype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 10px;
+    font-family: Lato;
+}
+
+@import 'forms';
